@@ -1,12 +1,21 @@
 package basics
 
 fun main() {
+    val str= "abcd 123"
+    for (c in str){
+        println(c)
+    }
 
-    var a=1
-    var message="a is $a"
-    println(message)
+    println("$str.length is ${str.length}")
 
-    a=a+2
+    val quote= """
+        |Tell me and I forgot.
+        |Teach me and I remember.
+        |Involve me and I learn.
+        |(Benjamin Franklin)
+    """.trimIndent()
 
-    println("${message.replace("is","was")}, but now is $a")
+    println(quote)
+
+
 }
